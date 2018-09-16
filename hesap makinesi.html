@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+
+<script>
+	 function topla(a,b)
+     {
+         var a=parseInt(document.getElementById("Giris1").value);
+         var b=parseInt(document.getElementById("Giris2").value);
+         document.getElementById("Giris3").value=a+b;
+         
+     }
+
+     function cikar(a,b)
+     {
+        var a=parseInt(document.getElementById("Giris1").value);
+        var b=parseInt(document.getElementById("Giris2").value);
+        document.getElementById("Giris3").value= a-b;
+     }
+
+     function carp(a,b)
+     {
+         var a=parseInt(document.getElementById("Giris1").value);
+         var b=parseInt(document.getElementById("Giris2").value);
+         document.getElementById("Giris3").value= a*b;
+     }
+
+     function bol(a,b)
+     {
+        var a=parseInt(document.getElementById("Giris1").value);
+        var b=parseInt(document.getElementById("Giris2").value);
+         document.getElementById("Giris3").value= a/b;
+     }
+
+	
+</script>
+
+<body>
+
+    <table>
+        <tr>
+            <th>Sayı Gir</th>
+            <th>İşlemler</th>
+            <th>Sonuç</th>
+        </tr>
+        
+        <tr>
+            <br>
+             <td><input type="number" name="" id="Giris1"></td>
+             <td><input type="button" value="Topla" onclick="topla()"/></td>
+             <td><input type="number" name="" id="Giris3" size="7px"></td>
+    
+        </tr>   
+
+        <tr>
+            <td><input type="number" name="" id="Giris2"></td>
+            <td><input type="button" value="Cikar" onclick="cikar()"/></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td><input type="button" value="Carp" onclick="carp()"></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td><input type="button" value="Böl" onclick="bol()"></td>
+        </tr>
+           
+
+    </table>
+ 
+    
+    
+    
+    
+    
+    
+    
+    
+  
+        
+</body>
+
+</html>

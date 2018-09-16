@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="color:blueviolet;">JAVA SCRIPT DENEMELER</h1>
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="paragraf"></p>
+
+<p id=toplamislemim></p>
+<p id=cikarmaislemim></p>
+
+
+<p onclick="bas()" style="color:darkturquoise;font-size:30px;font-family: Arial, Helvetica, sans-serif">BURAYA BASARSAN ALERT VERECEK</p>
+
+<script>
+	 
+function bas()
+{
+window.alert("TIKLANDI");
+}
+
+function uyarı2()
+{
+	window.alert("UYARI")
+}
+	var i,j;
+	i=4;
+	j=7;
+
+	function topla(i,j)
+	{
+		return i+j;
+	}
+
+	function carp(i,j)
+	{
+		return i*j;
+	}
+
+	function butonluToplama(i,j)
+	{
+		document.getElementById("toplamislemim").innerHTML= "Toplam = " + (i+j);
+	}
+
+	function butonluCikarma(i,j)
+	{
+		document.getElementById("cikarmaislemim").innerHTML= "Fark = " + (i-j);
+	}
+
+	document.getElementById("paragraf").innerHTML="JAVA SCRIPT DENEMELERİ";
+	document.getElementById("demo").innerHTML=topla(i,j);
+	document.getElementById("demo2").innerHTML=carp(i,j);
+
+</script>
+
+<div>
+<button onclick="document.write('')">TÜM SAYFAYI TEMİZLE</button>
+<button style="color:darksalmon;background-size: 10px"onclick="bas()">ÜZERİME TIKLA UYARI VEREYİM</button>
+<input type="button" value="ÜZERİME TIKLA UYARI VEREYİM" style="color: rgb(38, 0, 253);size: 10px;background-color: forestgreen" onclick="uyarı2()"/>
+<input type="text" onfocus="this.value=''" value="ÖZGÜR TORUN"/>
+</div>
+
+
+<div>
+<button onclick="butonluToplama(30,40)">TOPLAMA İŞLEMİ</button>
+<input type="button" value="CIKARMA ISLEMI" onclick="butonluCikarma(40,30)"/>
+</div>
+
+</body>
+
+</html>

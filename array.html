@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+            <p id="model"></p>
+            <p id="yakıt"></p>
+
+
+    </head>
+
+
+
+    <script>
+    var car1= 
+    {
+        marka:"Mercedes",
+        model:"C180",
+        yakıt:"benzin",
+        vites:"otomatik",
+        calistir:function()
+        {
+            window.alert("Araç Çalıştı");
+        }
+
+    };
+    
+    
+    var car2=
+    {
+        marka:"BMW",
+        model:"320",
+        yakıt:"dizel",
+        vites:"manuel"
+    };
+
+  
+
+    document.write(car1.marka);
+    
+    document.getElementById("model").innerHTML=car1.model;
+    document.getElementById("yakıt").innerHTML=car1.yakıt;
+
+
+    </script>
+
+
+<body>
+
+</body>
+</html>
